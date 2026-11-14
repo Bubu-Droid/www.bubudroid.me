@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A curated collection of notes, articles, and problem sets designed to bridge the gap between high school calculus and real analysis."
+    />
+    <meta name="author" content="Avigyan Chakraborty" />
+    <title>Calculus • Bubu</title>
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="stylesheet" href="/style.css" />
+    <script>
+      try {
+        document.documentElement.dataset.theme =
+          localStorage.getItem("theme") ||
+          (matchMedia("(prefers-color-scheme: dark)").matches
+            ? "night"
+            : "day");
+      } catch {}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: { "[+]": [["$", "$"]] },
+        },
+        svg: {
+          fontCache: "global",
+        },
+        output: {
+          displayOverflow: "linebreak",
+          linebreaks: {
+            inline: true,
+            width: "100%",
+            lineleading: 0.2,
+            LinebreakVisitor: null,
+          },
+        },
+      };
+    </script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/mathjax@4.1.3/tex-svg.js"
+      integrity="sha384-my9P1jDckpHD+5LZsLQ0gaiCl/RMO32HaqwBtbo/25QIMVr6xXIUCg1jvdSRcvb4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <button class="theme-toggle" aria-label="Toggle theme">
+      <svg class="icon-moon" viewBox="0 0 24 24">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+      </svg>
+      <svg class="icon-sun" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="4" />
+        <path
+          d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"
+        />
+      </svg>
+    </button>
+
+    <header>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/calculus/" aria-current="page">Calculus</a></li>
+          <li><a href="/olympiads/">Olympiads</a></li>
+          <li><a href="/pet-peeves/">Pet Peeves</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h1>Calculus</h1>
+        <p>
+          A collection of notes, handouts, and problem sets aimed at bridging
+          high school calculus with real analysis. To be fair, the difficulty
+          and scope of some of these articles go well beyond ISI/CMI
+          preparation. However, learning deeper techniques in analysis often
+          helps in developing intuitions for simpler solutions that might
+          otherwise seem out of reach.
+        </p>
+        <p>
+          Follow every article diligently from
+          <a href="https://ghoshadi.wordpress.com/calculus/" target="_blank"
+            >Aditya Da</a
+          >’s calculus page. In case any of the links break, a remote Google
+          Drive copy of the articles can be found
+          <a
+            href="https://drive.google.com/drive/folders/17eBo2hvbRIuBRXMz9g4YymH0t9NtpTc0?usp=sharing"
+            target="_blank"
+            >here</a
+          >.
+        </p>
+      </section>
+      <section>
+        <h2 id="seq-and-ser" class="anchored">Sequences and Series</h2>
+        <ol>
+          <li>
+            <a
+              href="https://drive.google.com/file/d/1Jpgl_TfGf7rop65qFo9J9exGLZsXr0Ub/view?usp=sharing"
+              target="_blank"
+              >The Role of LUB Axiom in Real Analysis by S. Kumaresan</a
+            >
+          </li>
+        </ol>
+      </section>
+      <section>
+        <h2 id="other-blogs" class="anchored">Other Helpful Blogs</h2>
+        <ol>
+          <li>
+            <a href="https://ghoshjishnu0.wordpress.com/" target="_blank"
+              >Jishnu’s Blog</a
+            >
+            — This blog has loads of problem sets and handouts relevant to ISI
+            and CMI entrances which you may try out.
+          </li>
+        </ol>
+      </section>
+      <section>
+        <h2 id="mcq-notes" class="anchored">MCQ Notes</h2>
+        <ol>
+          <li>
+            <a
+              href="https://drive.google.com/file/d/1TaE7pBe1hYUZhkqy0scyd4_-2NmyMtoH/view?usp=sharing"
+              target="_blank"
+              >Differentiation</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://drive.google.com/file/d/1WO07Ci1bzCE2bgf9xJChM0iT9PNhOcc0/view?usp=sharing"
+              target="_blank"
+              >Trigonometry</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://drive.google.com/file/d/1J-yhB98nqDzzfR_K206W4_yGNfqTJWzV/view?usp=sharing"
+              target="_blank"
+              >Determinants and Matrices</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://drive.google.com/file/d/18kkobiy90omsgpz-x0gVsIsI4xK5vcUN/view?usp=sharing"
+              target="_blank"
+              >Complex Numbers</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://drive.google.com/file/d/1LK2DY2q-3uHjs_PjKs6FAzKv3P277w9r/view?usp=sharing"
+              target="_blank"
+              >Probability</a
+            >
+          </li>
+          <li>
+            Integration, Coordinate Geometry, and Vectors — follow any school
+            level book (I followed S.N. Dey)
+          </li>
+        </ol>
+      </section>
+    </main>
+
+    <footer class="credits">
+      ©2026 Avigyan Chakraborty. Made with
+      <a href="https://github.com/Bubu-Droid/bloops">bloops</a> and the
+      <a href="https://github.com/Bubu-Droid/nekopurrin">nekopurrin</a>
+      template.
+    </footer>
+  </body>
+</html>
