@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Links to my social media, GitHub, and other ways to reach me."
+    />
+    <meta name="author" content="Avigyan Chakraborty" />
+    <title>Contact • Bubu</title>
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="stylesheet" href="/style.css" />
+    <script>
+      try {
+        document.documentElement.dataset.theme =
+          localStorage.getItem("theme") ||
+          (matchMedia("(prefers-color-scheme: dark)").matches
+            ? "night"
+            : "day");
+      } catch {}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: { "[+]": [["$", "$"]] },
+        },
+        svg: {
+          fontCache: "global",
+        },
+        output: {
+          displayOverflow: "linebreak",
+          linebreaks: {
+            inline: true,
+            width: "100%",
+            lineleading: 0.2,
+            LinebreakVisitor: null,
+          },
+        },
+      };
+    </script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/mathjax@4.1.3/tex-svg.js"
+      integrity="sha384-my9P1jDckpHD+5LZsLQ0gaiCl/RMO32HaqwBtbo/25QIMVr6xXIUCg1jvdSRcvb4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <button class="theme-toggle" aria-label="Toggle theme">
+      <svg class="icon-moon" viewBox="0 0 24 24">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+      </svg>
+      <svg class="icon-sun" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="4" />
+        <path
+          d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"
+        />
+      </svg>
+    </button>
+
+    <header>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/calculus/">Calculus</a></li>
+          <li><a href="/olympiads/">Olympiads</a></li>
+          <li><a href="/pet-peeves/">Pet Peeves</a></li>
+          <li><a href="/contact/" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h1>Contact</h1>
+        <p>
+          Here are some ways to reach me; whether it’s for questions, feedback,
+          or just to say hi. You’ll find links to my social media, GitHub, and
+          other platforms I use.
+        </p>
+      </section>
+      <section>
+        <ul class="li-left-bar">
+          <li>
+            <a href="https://github.com/Bubu-Droid" target="_blank"
+              >Bubu-Droid</a
+            >
+            on GitHub
+          </li>
+          <li><code>bubu_droid</code> on Discord</li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/avigyan-chakraborty-b004b2372/"
+              target="_blank"
+              >Avigyan Chakraborty</a
+            >
+            on LinkedIn
+          </li>
+          <li>
+            E-mail me at
+            <a href="#" id="email-link"
+              >$\text{bubu}\texttt{@}\text{bubudroid}{.}\text{me}$</a
+            >
+          </li>
+          <li>
+            <a href="https://aops.com/community/user/784223" target="_blank"
+              >kamatadu</a
+            >
+            on AoPS
+          </li>
+          <li>
+            <a href="https://www.youtube.com/@bubu-droid" target="_blank"
+              >Avigyan Chakraborty</a
+            >
+            on YouTube
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="credits">
+      ©2026 Avigyan Chakraborty. Made with
+      <a href="https://github.com/Bubu-Droid/bloops">bloops</a> and the
+      <a href="https://github.com/Bubu-Droid/nekopurrin">nekopurrin</a>
+      template.
+    </footer>
+  </body>
+</html>
