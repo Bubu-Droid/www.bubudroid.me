@@ -4,7 +4,7 @@ My personal website: plain HTML, CSS and a little JavaScript, with no
 framework, no build step and nothing running on the server. The look follows
 [bloops](https://github.com/Bubu-Droid/bloops) and the
 [nekopurrin](https://github.com/Bubu-Droid/nekopurrin) template: Catppuccin
-Latte and Mocha themes, with maths rendered by MathJax.
+Latte and Mocha themes, with math rendered by MathJax.
 
 ## Preview
 
