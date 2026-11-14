@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A personal website focused on mathematics—featuring blog posts, calculus articles, olympiad resources, pet peeves, and introspective thoughts on life."
+    />
+    <meta name="author" content="Avigyan Chakraborty" />
+    <title>Home • Bubu</title>
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="stylesheet" href="/style.css" />
+    <script>
+      try {
+        document.documentElement.dataset.theme =
+          localStorage.getItem("theme") ||
+          (matchMedia("(prefers-color-scheme: dark)").matches
+            ? "night"
+            : "day");
+      } catch {}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: { "[+]": [["$", "$"]] },
+        },
+        svg: {
+          fontCache: "global",
+        },
+        output: {
+          displayOverflow: "linebreak",
+          linebreaks: {
+            inline: true,
+            width: "100%",
+            lineleading: 0.2,
+            LinebreakVisitor: null,
+          },
+        },
+      };
+    </script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/mathjax@4.1.3/tex-svg.js"
+      integrity="sha384-my9P1jDckpHD+5LZsLQ0gaiCl/RMO32HaqwBtbo/25QIMVr6xXIUCg1jvdSRcvb4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <button class="theme-toggle" aria-label="Toggle theme">
+      <svg class="icon-moon" viewBox="0 0 24 24">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+      </svg>
+      <svg class="icon-sun" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="4" />
+        <path
+          d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"
+        />
+      </svg>
+    </button>
+
+    <header>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="/" aria-current="page">Home</a></li>
+          <li><a href="/calculus/">Calculus</a></li>
+          <li><a href="/olympiads/">Olympiads</a></li>
+          <li><a href="/pet-peeves/">Pet Peeves</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h1>Welcome!</h1>
+        <p>
+          Hi! I’m Avigyan Chakraborty, an undergraduate in the
+          <strong>B.Stat (Hons)</strong> program at
+          <strong>ISI Kolkata</strong>, Class of <strong>2028</strong>. This is
+          my personal website which contains a curated collection of academic
+          notes, personal reflections (both academic and non-academic), and a
+          growing archive of typesetting and grammatical pet peeves.
+        </p>
+      </section>
+      <section>
+        <h2>Explore</h2>
+        <ul class="li-left-bar">
+          <li>
+            <a href="/calculus/"><b>Calculus</b></a>
+            — A collection of articles and problem sets bridging high school
+            calculus and real analysis.
+          </li>
+          <li>
+            <a href="/olympiads/"><b>Olympiads</b></a>
+            — References and selected materials I used while preparing for Math
+            Olympiads in high school.
+          </li>
+          <li>
+            <a href="/pet-peeves/"><b>Pet Peeves</b></a>
+            — Nit-picky thoughts on code formatting, typesetting, and grammar
+            mistakes I’m obsessed with.
+          </li>
+          <li>
+            <a href="/contact/"><b>Contact</b></a>
+            — Links to my social media and other ways to reach me.
+          </li>
+        </ul>
+      </section>
+      <!-- TODO: update projects -->
+      <section>
+        <h1 id="my-projects" class="anchored">My Projects</h1>
+        <ul class="li-left-bar">
+          <li>
+            <a href="https://github.com/Bubu-Droid/website" target="_blank"
+              ><strong>This Website</strong></a
+            >
+            — Built from scratch using Django and Markdown. Features include
+            static pages, a blog system, and math rendering, all integrated with
+            the elegance of my favorite color scheme, Tokyo Night.
+          </li>
+          <li>
+            <a href="https://github.com/Bubu-Droid/bon" target="_blank"
+              ><strong>BON</strong></a
+            >
+            — A problem database management system built entirely in Python for
+            storing LaTeX-formatted content. It also supports integration with
+            LaTeX documents. A more detailed description of the project is
+            available in the
+            <a
+              href="https://github.com/Bubu-Droid/bon/blob/main/README.md"
+              target="_blank"
+              >README</a
+            >
+            file.
+          </li>
+          <li>
+            <a
+              href="https://github.com/Bubu-Droid/dotfiles/blob/main/texmf/tex/latex/sty/bubu.sty"
+              target="_blank"
+              ><strong>Custom LaTeX Styles</strong></a
+            >
+            — A custom style file for typesetting notes in LaTeX. It includes
+            both a minimal style for fast compiling and a more colorful and
+            appealing style for writing articles. Multiple
+            <a
+              href="https://github.com/Bubu-Droid/dotfiles/blob/main/texmf/tex/latex/sty/bubu.sty#L24"
+              target="_blank"
+              >user options</a
+            >
+            have been defined to customize the design of the document.
+          </li>
+          <li>
+            <a
+              href="https://github.com/Bubu-Droid/mini-projects-repo"
+              target="_blank"
+              ><strong>Miscellaneous Projects</strong></a
+            >
+            — A repository which contains mini-projects which are not notable
+            enough to have a dedicated repository for themselves.
+          </li>
+        </ul>
+      </section>
+      <!-- TODO: update about me -->
+      <section>
+        <h1 id="about-me" class="anchored">About me</h1>
+        <p>
+          I’m a math and CS enthusiast whom you can often find fiddling with
+          LaTeX, solving problems from contests, and writing scripts to make my
+          workflow smoother. I mostly work in Python, so most of my scripts are
+          written in it. Apart from that, I sometimes dabble in web-development
+          as well. Last but not the least, I use Arch BTW. You can find my
+          Dotfiles at the
+          <a href="https://github.com/Bubu-Droid/dotfiles" target="_blank"
+            >GitHub repository</a
+          >. I usually go by <strong>Bubu-Droid</strong> online. On (AoPS), I’m
+          known as
+          <a href="https://aops.com/community/user/784223" target="_blank"
+            >kamatadu</a
+          >. Other accounts of mine on AoPS include
+          <a href="https://aops.com/community/user/943252" target="_blank"
+            >HoripodoKrishno</a
+          >,
+          <a href="https://aops.com/community/user/810668" target="_blank"
+            >REYNA_MAIN</a
+          >, and
+          <a href="https://aops.com/community/user/778606" target="_blank"
+            >Bubu-Droid</a
+          >.
+        </p>
+        <p>
+          When I’m not crunching numbers or jabbing my fingers at the keyboard,
+          I enjoy watching anime (my
+          <a href="https://anilist.co/user/BubuDroid/" target="_blank"
+            >AniList profile</a
+          >) and playing video games. I’m currently learning how to edit videos
+          using Davinci Resolve. I also watch motovlogs, a LOT of AMVs, and
+          listen to music. I used be an avid Clash of Clans player; you can find
+          me at <code>#POJCRJJUY</code> and <code>#9U2UPJ8R9</code>. I also have
+          a YouTube channel, which you can find
+          <a href="https://www.youtube.com/@bubu-droid" target="_blank">here</a
+          >.
+        </p>
+        <p>
+          I listen to music a lot and I’m currently working on migrating my
+          playlist of over 1000 Liked Songs from Spotify to YouTube Music (yes,
+          Spotify sucks) and sorting them based on my arbitrary and biased
+          decision-making (did you get the reference?). You can find my public
+          music playlists from my
+          <a href="https://music.youtube.com/@bubu-droid" target="_blank"
+            >YT Music</a
+          >
+          and
+          <a
+            href="https://open.spotify.com/user/314j5zrlhyu3bi4pitrtrb7cvv2q"
+            target="_blank"
+            >Spotify</a
+          >
+          profiles.
+        </p>
+      </section>
+    </main>
+
+    <footer class="credits">
+      ©2026 Avigyan Chakraborty. Made with
+      <a href="https://github.com/Bubu-Droid/bloops">bloops</a> and the
+      <a href="https://github.com/Bubu-Droid/nekopurrin">nekopurrin</a>
+      template.
+    </footer>
+  </body>
+</html>
